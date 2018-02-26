@@ -21,7 +21,7 @@
                 </li>
 
                 <li>
-                  <a href="#"><i class="fa fa-newspaper-o fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Actualités</a>
+                  <b-link to="/blog"><i class="fa fa-newspaper-o fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Actualités</b-link>
                 </li>
                 
                 <li>
@@ -55,10 +55,10 @@
 </div>
 <div class="container top-bar">
   <nav class="navbar ">
-    <div class="navbar-brand page-title" >Title</div>
+    <div class="navbar-brand page-title" >{{getTitle()}}</div>
     <div class="navbar-brand name-asso " >L'Atelier Soudé</div>
     <div class="navbar-brand user-name">{{ user.first_name }}</div>
-    <div class="navbar-brand login " ><a href=""><i class="fa fa-user-circle-o fa-2x"></i></a></div>
+    <div class="navbar-brand login " ><b-link to="/personal-page"><i class="fa fa-user-circle-o fa-2x"></i></b-link></div>
     <div class="navbar-brand arrow-login ">
 
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class=""></i></a>
@@ -80,18 +80,30 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
+import Blog from '../Blog'
 
 export default {
   name: 'TopBar',
+  components: { 'blog': Blog },
   computed: {
     ...mapState({
       user: state => state.user,
     }),
   },
+   data () {
+    return {
+      title: ''
+    }
+  },
   methods: {
     ...mapActions([
       'getCurrentUser',
     ]),
+    getTitle() {
+      // return this.title = $("h1");
+      var i = $( "h1" );
+      console.log(i);
+    }
   },
   mounted () {
     this.getCurrentUser()
@@ -181,7 +193,7 @@ export default {
   width: 40px;
   height: 100%;
   color: #e1ffff;
-  transition: width .5s;
+  transition: width .25s;
   z-index: 1;
 }
 .nav-side-menu .brand {
