@@ -10,7 +10,7 @@
 
 
 <div class="nav-side-menu">
-    <div class="brand"><img src="static/img/logo-atelier-soude.png" width="30"></div>
+    <div class="brand"><b-link to="/home"><img src="../static/img/logo-atelier-soude.png" width="30"></b-link></div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
   
         <div class="menu-list">
@@ -21,7 +21,7 @@
                 </li>
 
                 <li>
-                  <b-link to="/blog"><i class="fa fa-newspaper-o fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Actualités</b-link>
+                  <b-link to="/blog/"><i class="fa fa-newspaper-o fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Actualités</b-link>
                 </li>
                 
                 <li>
@@ -193,7 +193,7 @@ export default {
   width: 40px;
   height: 100%;
   color: #e1ffff;
-  transition: width .25s;
+  transition: width .15s;
   z-index: 1;
 }
 .nav-side-menu .brand {

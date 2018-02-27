@@ -14,7 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.conf.urls import url
+from django.urls import include, path
+
+
+# from '../client/components/Home.vue' import Home
+
+
+
+# from '../client/components/PersonalPage.vue' import PersonalPage
 
 from server import views
 
@@ -23,5 +31,14 @@ urlpatterns = [
     path('login/', views.LoginView.as_view(), name='login'),
     path('logout/', views.logout, name='logout'),
     path('api/current-user', views.UserView.as_view(), name='current-user'),
-    path('', views.index, name='home'),
+    path('', views.index),
+    path('home/', views.index, name='home'),
+    # url(r'^home/$', views.index, name='home'),
+    url(r'^blog/$', views.index, name='blog'),
+    url(r'^personal-page/$', views.index, name='personalPage'),
+    # path('home', views.index, name='home'),
+    # path('/blog', views.VueRouter, name='Blog'),
+    # path('personal-page/', PersonalPage.as_view(), name='PersonalPage'),
+    # path('blog/', views.blog, name='blog'),
+
 ]
