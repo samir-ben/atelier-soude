@@ -10,10 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
+
 import os
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -39,7 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webpack_loader',
     'rest_framework',
-    'server'
+    'server',
+    'blog',
+  
+    
 ]
 
 MIDDLEWARE = [
@@ -59,6 +65,8 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, '../templates'),
             os.path.join(BASE_DIR, '../client'),
+            os.path.join(BASE_DIR, '../client/components'),
+            
         ],
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'APP_DIRS': True,

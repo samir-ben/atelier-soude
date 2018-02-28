@@ -1,9 +1,9 @@
-<template>
+
+<template> 
 <article>
   <h1 class="container" ref="mytitle">{{title}}</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum, veritatis. Delectus, a, laboriosam! Alias, nobis? Labore, corrupti. Asperiores harum architecto voluptate consequuntur pariatur hic neque possimus deserunt delectus molestias!</p>
-</article>
- 
+  <p><i>Clique sur réactualiser pour voir les articles</i></p>
+</article> 
 </template>
 
 <script>
@@ -21,7 +21,6 @@ export default {
       title: 'Blog'
     }
   },
-
 }
 </script>
 
@@ -30,5 +29,4 @@ h1 {
 	margin: 0;
 	padding: 0;
 }
-
 </style>

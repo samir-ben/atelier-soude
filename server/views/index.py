@@ -12,10 +12,10 @@ def index(request):
     return render(request, 'index.html', {})
 
 def home(request):
-    return render(request, 'App', {})
+    return render(request, 'index.html', {})
 
-def blog(request):
-    return render(request, 'App', {})
+# def blog(request):
+#     return render(request, 'App', {})
 
 def personalPage(request):
-    return render(request, 'App', {})
+    return render(request, 'index.html', {})

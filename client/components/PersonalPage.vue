@@ -37,10 +37,7 @@ export default {
       items: items
     }
   }
-
 }
-
-
 </script>
 
 <style scoped>
@@ -49,7 +46,6 @@ export default {
 	height: 200px;
 	text-align: center;
 }
-
 .profile-img {
   width: 80px;
   display: block;
@@ -60,7 +56,6 @@ export default {
   border-radius: 100%;
   box-shadow:  0 1px 0 0 rgba(0,0,0,.1);
 }
-
 .profile-text {
   margin-top: -3.5em;
   padding: 5em 1.5em 1.5em 1.5em; 
@@ -68,7 +63,6 @@ export default {
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1)
 }
-
 .profile-name{
   margin-right: -1em;
   margin-bottom: .75em;
@@ -78,7 +72,6 @@ export default {
   font-size: 1.5em;
   text-transform: uppercase;
 }
-
 .profile-title {
   color: #999999;
 }

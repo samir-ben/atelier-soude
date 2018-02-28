@@ -1,14 +1,5 @@
 <template>
 <header>
-<!-- <div class="container top-bar">
-      <div class="">Titre</div>
-      <div class="title">L'Atelier Soudé</div>  
-      <div class="fa fa-user-circle-o fa-4x"></div>
-
-</div> -->
-
-
-
 <div class="nav-side-menu">
     <div class="brand"><b-link to="/home"><img src="../static/img/logo-atelier-soude.png" width="30"></b-link></div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
@@ -48,8 +39,6 @@
                 <li>
                   <a href="#"><i class="fa fa-map-signs fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Lieux</a>
                 </li>
-                
-               
             </ul>
      </div>
 </div>
@@ -60,7 +49,6 @@
     <div class="navbar-brand user-name">{{ user.first_name }}</div>
     <div class="navbar-brand login " ><b-link to="/personal-page"><i class="fa fa-user-circle-o fa-2x"></i></b-link></div>
     <div class="navbar-brand arrow-login ">
-
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class=""></i></a>
         <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">Mon profil</a>
@@ -73,7 +61,6 @@
     </div>
   </nav>
 </div>
-
   <hr>
 </header>
 </template>
@@ -173,14 +160,10 @@ export default {
 .fa-user-circle-o:hover, .dropdown-toggle:hover {
   text-decoration: none;
   color: #212120;
-
 }
 .nav-side-menu:hover {
   width: 180px;
 }
-
-
-
 .main {
     margin-left: 220px;
     padding: 15px;
@@ -357,9 +340,4 @@ export default {
     display: none;
   }
 }
-
-
-
-
-
 </style>
