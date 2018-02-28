@@ -31,6 +31,7 @@ urlpatterns = [
     path('', views.index),
     path('home/', views.index, name='home'),
     url(r'^personal-page/$', views.index, name='personalPage'),
+    url(r'^contact/$', views.index, name='contact'),
 
 
 ]

@@ -14,8 +14,8 @@ def index(request):
 def home(request):
     return render(request, 'index.html', {})
 
-# def blog(request):
-#     return render(request, 'App', {})
+def contact(request):
+    return render(request, 'index.html', {})
 
 def personalPage(request):
     return render(request, 'index.html', {})

@@ -4,7 +4,7 @@
   		<b-card title="Card Title"
       		<img src="./static/img/avatar-default.jpg" class="profile-img">
   			<div class="profile-text">
-    			<h2 class="profile-name">Jonathan Doe</h2>
+    			<h2 class="profile-name">{{ user.first_name }}</h2>
     			<span class="profile-title">UX / UI Designer</span>
   			</div>
   		</b-card>

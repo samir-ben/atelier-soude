@@ -12,7 +12,7 @@
                 </li>
 
                 <li>
-                  <b-link to="/blog/"><i class="fa fa-newspaper-o fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Actualités</b-link>
+                  <a href="/blog/"><i class="fa fa-newspaper-o fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Actualités</a>
                 </li>
                 
                 <li>
@@ -24,7 +24,7 @@
                 </li>
                 
                 <li>
-                  <a href="#"><i class="fa fa-users fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Communauté</a>
+                  <b-link to="/contact/"><i class="fa fa-users fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Communauté</b-link>
                 </li>
           
                 <li  data-toggle="collapse" data-target="#maintenance" class="collapsed">
