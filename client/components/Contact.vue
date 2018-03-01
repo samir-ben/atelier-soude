@@ -6,10 +6,10 @@
         <input type="text" v-model="search" placeholder="Recherche">
       </div>
     </b-container>
-    <i @click="show = !show" class="bouton-switch d-flex justify-content-center fa fa-id-card-o fa-2x" ></i><i @click="show = !show" class="bouton-switch d-flex justify-content-center fa fa-list fa-2x"></i>
+    <button @click="removeButton()" class="bouton-switch d-flex justify-content-center fa fa-list fa-2x" ></button>
     <div v-if="show">
-      <div class="container contact-card ">
-        <div class="row d-flex justify-content-center">
+      <div class="container contact-card d-flex justify-content-center ">
+        <div class="row ">
            <transition-group name="list" tag="p">
               <div v-for="contact in filteredContacts" v-bind:key="contact" class="profil-card list-item" >
                 <div class="col-xl-12" >
@@ -89,9 +89,8 @@ export default {
       user: state => state.user,
     }),
     filteredContacts: function(){
-
       return this.contacts.filter((contact)=>{
-        return contact.firstname.match(this.search) || contact.name.match(this.search)
+        return contact.firstname.toLowerCase().match(this.search.toLowerCase()) || contact.name.toLowerCase().match(this.search.toLowerCase()) || contact.age.toLowerCase().match(this.search.toLowerCase()) || contact.status.toLowerCase().match(this.search.toLowerCase()) || contact.location.toLowerCase().match(this.search.toLowerCase())
       });
     }
 
@@ -102,6 +101,17 @@ export default {
       search: '',
       show: true,
     }
+  },
+  methods: {
+      removeButton: function() {
+        if (this.show = !this.show) {
+          $( ".bouton-switch" ).removeClass( "fa-list fa-id-card-o" ).addClass( "fa-list" );
+        }
+        else {
+          $( ".bouton-switch" ).removeClass( "fa-list" ).addClass( "fa-id-card-o fa-list" );
+        }
+
+       }
   }
 }
 </script>
@@ -109,19 +119,22 @@ export default {
 <style scoped>
 .search-bar input{
   width: 100%;
-  margin: 10px 20px 20px 20px;
+  padding: 0;
+  margin: 10px auto 20px auto;
 }
 .bouton-switch{
+  position: relative;
   margin: 0px auto 15px auto;
+  background-color: transparent;
+  border: transparent;
+  padding: 0;
 }
 .bouton-switch:hover{
   color: gray;
 }
-.contact-card{
-  float: none;
-  margin: 0 auto;
-  padding: 0;
-
+.contact-card  {
+display: inline-block !important;
+text-align: center;
 }
 .profil-card {
 	width: 190px;
@@ -167,11 +180,12 @@ export default {
   margin-right: 10px;
 }
 .list-enter-active, .list-leave-active {
-  transition: all 1s;
+  transition: all 0.2s;
 }
 .list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 0.5;
+  transform: translateY(2px);
 }
+
 
 </style>
