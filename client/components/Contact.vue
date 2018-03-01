@@ -21,6 +21,7 @@
                       <p class="profile-title">Age: {{contact.age}}</p>
                       <p class="profile-title">Statut: <span class="fisrt-letter">{{contact.status}}</span></p>
                       <p class="profile-title">Ville: <span class="fisrt-letter">{{contact.location}}</span></p>
+                      <p class="profile-title"><button class="btn btn-secondary">Voir profil</button></p>
                       
                     </div>
                   </div>
@@ -50,7 +51,7 @@
           <td><span class="fisrt-letter">{{ contact.age }}</span></td>
           <td><span class="fisrt-letter">{{ contact.status }}</span></td>
           <td><span class="fisrt-letter">{{ contact.location }}</span></td>
-          <td><span class="fisrt-letter"><button class="btn primary">Voir profil</button></span></td>
+          <td><span class="fisrt-letter"><button class="btn btn-secondary">Voir profil</button></span></td>
       </tr>
    </transition-group>
   </table>

@@ -149,6 +149,7 @@ export default {
 }
 
 .fa-user-circle-o, .dropdown-toggle {
+  margin-top: 0px;
   text-decoration: none;
   color: #A9A9A9;
 }
