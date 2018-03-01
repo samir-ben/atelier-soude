@@ -1,6 +1,6 @@
 <template>
 <article>
-  <h1 class="container">Accueil</h1>
+  <h1 class="container nav-title ">Accueil</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, voluptatum, veritatis. Delectus, a, laboriosam! Alias, nobis? Labore, corrupti. Asperiores harum architecto voluptate consequuntur pariatur hic neque possimus deserunt delectus molestias!</p>
 </article>
  
@@ -20,8 +20,5 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-	margin: 0;
-	padding: 0;
-}
+
 </style>

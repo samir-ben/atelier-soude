@@ -1,5 +1,6 @@
 <template>
 <section>
+  <h1 class="nav-title">Espace personnel</h1>
 	<div class="profil-card">
   		<b-card title="Card Title"
       		<img src="./static/img/avatar-default.jpg" class="profile-img">

@@ -22,6 +22,12 @@ export default {
 body {
     background-color: #F4F3F0;
 }
+.nav-title {
+  margin-top: -47px !important;
+  padding-left: 0;
+  padding-bottom: 30px;
+  font-size: 1.7em;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -42,6 +48,12 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media all and (max-width: 760px){
+  .nav-title {
+    margin-top: -47px !important;
   }
 }
 </style>

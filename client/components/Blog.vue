@@ -1,7 +1,7 @@
 
 <template> 
 <article>
-  <h1 class="container" ref="mytitle">{{title}}</h1>
+  <h1 class="container nav-title " ref="mytitle">{{title}}</h1>
   <p><i>Clique sur réactualiser pour voir les articles</i></p>
 </article> 
 </template>
@@ -25,8 +25,5 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-	margin: 0;
-	padding: 0;
-}
+
 </style>

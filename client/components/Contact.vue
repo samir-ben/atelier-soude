@@ -1,6 +1,7 @@
 <template>
 <section >
   <div>
+    <h1 class="nav-title ">Contacts</h1>
     <b-container>
       <div class="search-bar">
         <input type="text" v-model="search" placeholder="Recherche">
