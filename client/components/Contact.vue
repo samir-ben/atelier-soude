@@ -20,7 +20,7 @@
                       <p class="profile-title">Age: {{contact.age}}</p>
                       <p class="profile-title">Statut: <span class="fisrt-letter">{{contact.status}}</span></p>
                       <p class="profile-title">Ville: <span class="fisrt-letter">{{contact.location}}</span></p>
-                      <button class="btn primary">Voir profil</button>
+                      
                     </div>
                   </div>
                 </div>
@@ -39,6 +39,7 @@
         <th scope="col">Âge</th>
         <th scope="col">Statut</th>
         <th scope="col">Ville</th>
+        <th scope="col">Profil</th>
       </tr>
       <transition-group tag="tbody" name="list">
       <tr v-for="contact in filteredContacts" :key="contact.name">  
@@ -48,6 +49,7 @@
           <td><span class="fisrt-letter">{{ contact.age }}</span></td>
           <td><span class="fisrt-letter">{{ contact.status }}</span></td>
           <td><span class="fisrt-letter">{{ contact.location }}</span></td>
+          <td><span class="fisrt-letter"><button class="btn primary">Voir profil</button></span></td>
       </tr>
    </transition-group>
   </table>
