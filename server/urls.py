@@ -32,7 +32,7 @@ urlpatterns = [
     path('home/', views.index, name='home'),
     url(r'^personal-page/$', views.index, name='personalPage'),
     url(r'^contact/$', views.index, name='contact'),
-    url(r'^contact/[1-9][0-9]{0,2}|10', views.index, name='showContact'),
+    url(r'^contact/[^1-9][0-9]{0,2}|10', views.index, name='showContact'),
 
 
 ]
