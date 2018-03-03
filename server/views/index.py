@@ -17,5 +17,8 @@ def home(request):
 def contact(request):
     return render(request, 'index.html', {})
 
+def showContact(request):
+    return render(request, 'index.html', {})
+
 def personalPage(request):
     return render(request, 'index.html', {})

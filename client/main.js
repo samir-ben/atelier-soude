@@ -5,9 +5,12 @@ import App from './App'
 import router from './routes'
 import store from './stores/main'
 import BootstrapVue from 'bootstrap-vue'
+import VueResource from 'vue-resource'
 
-Vue.config.productionTip = false
-Vue.use(BootstrapVue)
+Vue.use(VueResource);
+
+Vue.config.productionTip = false;
+Vue.use(BootstrapVue);
 
 sync(store, router)
 
