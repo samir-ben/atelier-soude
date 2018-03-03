@@ -102,7 +102,7 @@ export default {
   },
   computed:{
        getRange(){
-      if ( this.id > contacts.length){
+      if ( this.id != contacts.length){
          this.show = !this.show;
       }
     },
