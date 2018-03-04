@@ -70,7 +70,6 @@ export default {
   // },
   methods: {
     getName(){
-      // return Object.values(contacts)[this.id - 1];
       if (this.id <= contacts.length){      
         return contacts[this.id-1].name;
     }  
@@ -101,10 +100,16 @@ export default {
     },
   },
   computed:{
-       getRange(){
-      if ( this.id != contacts.length){
-         this.show = !this.show;
-      }
+      getRange(){
+        if (this.id > contacts.length){
+          this.show = !this.show;
+        }
+        else if (this.id <= 0){
+          this.show = !this.show;
+        }
+        else if ($.isNumeric(this.id) === false){
+          this.show = !this.show;
+        }
     },
   }
 
