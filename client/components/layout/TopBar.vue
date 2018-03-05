@@ -3,9 +3,7 @@
 <div class="nav-side-menu">
     <div class="brand"><b-link to="/home"><img src="../static/img/logo-atelier-soude.png" width="30"></b-link></div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-  
         <div class="menu-list">
-  
             <ul id="menu-content" class="menu-content collapse out">
                 <li>
                   <b-link to="/home"><i class="fa fa fa-home fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Accueil</b-link>
@@ -16,7 +14,7 @@
                 </li>
                 
                 <li>
-                  <a href="#"><i class="fa fa-calendar fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Réservations ateliers</a>
+                  <b-link to="/event"><i class="fa fa-calendar fa-lg fa-fw sidebar-icon"></i>&nbsp;&nbsp;&nbsp;&nbsp; Réservations ateliers</b-link>
                 </li>
 
                  <li>
@@ -96,8 +94,6 @@ export default {
     this.getCurrentUser()
   },
 }
-
-
 </script>
 
 <style scoped>
@@ -124,14 +120,12 @@ export default {
    margin: 6px 0 0 0;
   right: 60px;
   padding: 0;
-
 }
 .login {
   position: absolute;
   right: 20px;
   margin: 4px 0 0 0;
   padding: 0;
-
 }
 .arrow-login {
   position: absolute;
@@ -147,7 +141,6 @@ export default {
 .brand {
   border-bottom: 0.5px solid #a8a8a8;
 }
-
 .fa-user-circle-o, .dropdown-toggle {
   margin-top: 0px;
   text-decoration: none;
@@ -155,7 +148,6 @@ export default {
 }
 .dropdown-toggle {
   font-size: 1.5em;
-
 }
 .fa-user-circle-o:hover, .dropdown-toggle:hover {
   text-decoration: none;
@@ -188,7 +180,6 @@ export default {
 }
 .nav-side-menu .toggle-btn {
   display: none;
-
 }
 .nav-side-menu ul,
 .nav-side-menu li {
@@ -319,7 +310,7 @@ export default {
   }
   .nav-side-menu:hover {
   width: 100%;
-}
+  }
 }
 @media (min-width: 767px) {
   .nav-side-menu .menu-list .menu-content {

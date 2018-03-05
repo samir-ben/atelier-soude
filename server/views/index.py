@@ -14,6 +14,9 @@ def index(request):
 def home(request):
     return render(request, 'index.html', {})
 
+def event(request):
+    return render(request, 'index.html', {})
+
 def contact(request):
     return render(request, 'index.html', {})
 

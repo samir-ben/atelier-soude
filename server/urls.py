@@ -26,6 +26,7 @@ urlpatterns = [
     path('logout/', views.logout, name='logout'),
     path('api/current-user', views.UserView.as_view(), name='current-user'),
     url(r'^blog/', include('blog.urls')),
+    url(r'^event/$', views.index, name='event'),
     path('', views.index),
     path('home/', views.index, name='home'),
     url(r'^personal-page/$', views.index, name='personalPage'),
